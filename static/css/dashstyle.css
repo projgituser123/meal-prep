@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(248, 249, 250);
+    color: rgb(51, 51, 51);
+    padding-top: 50px;
+}
+
+.navbar {
+    padding: 16px 0;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: rgb(85, 85, 85);
+    padding: 8px 16px;
+    margin: 0 4px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(240, 240, 240, 0.773);
+    border-width: 2px;
+    border-color: rgb(51, 51, 51);
+}
+
+.nav-link.active {
+    color: rgb(39, 174, 96);
+    background-color: rgb(232, 245, 233);
+}
+
+.nav-link i {
+    margin-right: 5px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 8px;
+}
+
+.offcanvas {
+    max-width: 300px;
+}
+
+.offcanvas-header {
+    background-color: rgb(248, 249, 250);
+}
+
+.offcanvas-title {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.btn-success {
+    background-color: rgb(39, 174, 96);
+    border-color: rgb(39, 174, 96);
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: rgb(34, 153, 84);
+    border-color: rgb(34, 153, 84);
+    transform: scale(1.05);
+}
+
+.carousel-inner img {
+    height: 400px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.carousel-controls {
+    display: inline-flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.carousel-control-btn {
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.carousel-control-btn i {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.carousel-slide {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.accordion {
+  --bs-accordion-active-bg: rgb(255, 255, 255);
+  --bs-accordion-active-color: rgb(0, 0, 0);
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+.accordion-button.collapsed {
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.accordion-collapse {
+  transition: all 0.3s;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: none !important;
+    }
+    
+    .nav-link {
+        font-size: 17.6px;
+        padding: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 250px;
+    }
+    
+    .footer-section {
+        padding-top: 40px;
+    }
+    
+    .footer-section h5 {
+        font-size: 17.6px;
+    }
+}
+
+.footer-section {
+    background: linear-gradient(135deg, rgb(44, 62, 80) 0%, rgb(52, 73, 94) 100%);
+    color: rgb(255, 255, 255);
+    padding-top: 60px;
+    margin-top: 80px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: none;
+}
+
+.footer-section.show-footer {
+    animation: slideUpFooter 0.8s ease-out forwards;
+}
+
+@keyframes slideUpFooter {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-section h5 {
+    color: rgb(52, 152, 219);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: rgb(52, 152, 219);
+    padding-left: 5px;
+    transition: all 0.3s;
+}
+
+.social-icons a {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: rgb(52, 152, 219);
+}
