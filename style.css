@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* FIXED VIDEO */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* COMMON SECTION STYLE */
+.section {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-align: center;
+  background: #614051;
+  transform: translateY(-50px);
+}
+
+.logo {
+  width: 10cm;
+  height: 10cm;
+  margin-bottom: 20px; /* space between logo & text */
+}
+
+/* TRANSPARENT SECTION */
+.transparent-section {
+  background: transparent /* shows video */
+}
+
+/* COLORED SECTION */
+.colored-section {
+  height:210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  background: rgb(242, 234, 208); 
+  color: black;
+}
+.footercode {
+  min-height: 100vh;
+  background-color: rgb(230, 224, 212);
+  padding-top: 100px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.footercode h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(40, 40, 40);
+  margin-bottom: 30px;
+}
+
+.about {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgb(60, 60, 60);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.startbutton {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 18px 45px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.startbutton:hover {
+  background-color: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
+}
+.social-icons a {
+  margin: 0 15px;
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: rgb(100, 100, 100);
+}
+@media (max-width: 768px) {
+  .footercode h2 {
+    font-size: 32px;
+  }
+  
+  .about {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  
+  .startbutton {
+    padding: 15px 35px;
+  }
+}
