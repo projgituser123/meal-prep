@@ -1,0 +1,13 @@
+json = javascript object notation .. data will be stored in this form.. treat just like dictionery..
+syntax :  object_name = {key : value , ...... }
+to fetch certain info or the values from the json object use syntax : 
+        dot notation : object_name.keys
+                     : object_name["keys"]
+if writing in json file, keys and values must be in " "
+
+
+NODE.js ::::
+callback : calling function from a function..
+1. setTimeOut = sytax : setTimeOut(function_name, delay_ms) ... it will provide a delay before calling a function...it will be called only once..
+2. setInterval = call the function infinitely.... syntax : setInterval(function_name, delay_ms)
+                to stop the loop, either you stop the browser or clearInterval (timer_variable)

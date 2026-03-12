@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1 id="answer"></h1>
+    <script>
+        // Write a code to fetch the values of keys and print a sentence as “Hi! We are students of semester 4 of CSE branch” in h1 tag on browser.
+
+        let jsonobj = {"A" : "LJU", "B" : ["CSE", "IT" , "CE"], "C" : [ {"D" : "Hi", "E" : ['are', 4, {'F' : ['semester', 'We']} ]}] , "G" : {"H" : "students","I" : ["of","!"]},"J" : [{"K" :"Python", "L":"branch"},"FSD-2"]
+        }
+        console.log(jsonobj.C[0].D)
+        console.log(jsonobj.G.I[1])
+        console.log(jsonobj.C[0].E[2].F[1])
+        console.log(jsonobj.C[0].E[0])
+        console.log(jsonobj.G.H)
+        console.log(jsonobj.G.I[0])
+        console.log(jsonobj.C[0].E[2].F[0])
+        console.log(jsonobj.C[0].E[1])
+        console.log(jsonobj.G.I[0])
+        console.log(jsonobj.B[0])
+        console.log(jsonobj.J[0].L)
+        document.getElementById("answer").innerHTML = jsonobj.C[0].D + "" + jsonobj.G.I[1] + " " + jsonobj.C[0].E[2].F[1] + " " + jsonobj.C[0].E[0] + " " + jsonobj.G.H + " " + jsonobj.G.I[0] + " "+ jsonobj.C[0].E[2].F[0] + " "+ jsonobj.C[0].E[1] + " " + jsonobj.G.I[0] + " " + jsonobj.B[0] + " "+ jsonobj.J[0].L +" ."
+    </script>
+    
+</body>
+</html>

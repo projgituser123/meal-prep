@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Write one json string with proper date and print date in IST while clicking on button...
+        function date(){
+            let jsonstr = '{"name" : "dvc", "bplace" : "amd", "dob" : "2006-09-24"}' // " " is imp for key and values both...
+            // you will get this type of json obj but of dataype in str form so we cannot directly use this, first convert it into json obj
+            let jsonobj = JSON.parse(jsonstr) // it will convert str into obj ...
+            // now to manipulate the DOB, use obj.name = __________
+            jsonobj.dob = new Date()
+            console.log(jsonobj.dob)
+            // print into the <p> using its id
+            document.getElementById("IST").innerHTML = "birthday of " + jsonobj.name + " is =" + jsonobj.dob
+        }
+        
+    </script>
+</head>
+<body>
+    <p id="IST"></p>
+    <button onclick="date()">Show date</button>
+</body>
+</html>

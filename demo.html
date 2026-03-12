@@ -1,0 +1,31 @@
+<script>
+    let obj = {name : 'dvc', batch : 'd4', age:19, present : true, sub :["DM","COA","FSD2"], sports : { sname : "football", position : "cm", club: "psg"}}
+    let obj1 = '{"name" : "dvc"}' // this is a complete string 
+
+    let obj2 = `{"name" : "vrc"}` // this means string ni ander JSON object,
+    // To get the o/p, convert this string into the object (reversed eng) with JSON.parse(obj1)
+    let jsonobj = JSON.parse(obj2)
+    console.log(jsonobj)
+    console.log(typeof(jsonobj))
+
+    console.log(obj1.name)
+    console.log(typeof(obj1))
+
+    console.log(obj.name)
+    console.log(obj.batch)
+    console.log(typeof(obj))
+    console.log(typeof(obj.present))
+    console.log(typeof(obj["age"]))
+    console.log(obj["sub"])
+    console.log(obj["sub"][1])
+    console.log(typeof(obj["sub"][1]))
+    console.log(obj.sports)
+    console.log(obj.sports.sname)
+    document.write(obj)// of you directly write this LOC then you get : [object Object] instead you convert this JSON object to string first.
+     
+     let jsonstr = JSON.stringify(obj)
+     document.write(JSON.stringify(obj))
+     document.write(jsonstr)
+
+    
+</script>

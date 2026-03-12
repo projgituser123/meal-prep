@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // write a function first and last that takes in a array and it returns an obj with the first element of array as obj.keys and last element of array as that key's value.... use syntax : obj[keys]=values
+        let arr = ["abc","def","pqr","xyz"]
+        let jsonobj = {}
+        function firstandlast(arr){
+            jsonobj[arr[0]] = arr[arr.length-1] //  arr[0] is keys and arr[arr.length-1] is our value
+            return jsonobj
+        }
+        let funcans = firstandlast(arr)
+        console.log(funcans)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

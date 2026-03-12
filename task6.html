@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Print following statement in console from given JSON objects.
+        // Output: Ramesh got 99 outof 100 marks and secure 1st rank.
+        let jsonobj = {"Name" : "Ramesh",
+"Subects" : ["Maths", "Scence" , "chemistry"],
+"Grade" : {"Type" : "marks","Total" : [88,90,99,87]},
+"Range" : {"opt" : "100", "type" : ["secure","subject","class"]},
+"achive" : [{"Rank" :"rank", "place":[1,2,3]}, {"Ordinalindicator":"st"},"12"],
+"joints" : ['outof','got','and']
+}
+    let name = jsonobj.Name
+    console.log(name)
+    let got = jsonobj.joints[1]
+    console.log(got)
+    console.log(jsonobj.Grade.Total[2])
+    console.log(jsonobj.joints[0])
+    console.log(jsonobj.Range.opt)
+    console.log(jsonobj.Grade.Type)
+    console.log(jsonobj.joints[2])
+    console.log(jsonobj.Range.type[0])
+    console.log(jsonobj.achive[0].place[0])
+    console.log(jsonobj.achive[1].Ordinalindicator)
+    console.log(jsonobj.achive[0].Rank)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

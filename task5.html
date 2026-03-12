@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // how to access multiple json obj from an arr.
+        //write a script to store an array of 3 objects having name and age display name and age of person with the highest age..
+        let info = [{name : "dvc","age" : 19}, {name : "pqr", age:11},{name:"leon s", age:51}]
+        // to compare or to perform conparison of any values of multiple objin arr, always first initialize it.
+        let oldperson = info[0] // whole obj is stored in this var
+        // compare the age via loop,it would be more easy..
+        for (i = 1; i<info.length; i++){
+            if (info[i].age > oldperson.age){
+                oldperson = info[i]
+            }
+        }
+        console.log(oldperson)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
